@@ -1,6 +1,4 @@
 <!-- Things to do -->
-<!-- Set min width and height for cards, remove min height if it looks better without it -->
-<!-- Move buttons to the bottom of the cards, expanded to edge -->
 <!-- Add navigation bar for things -->
 <!-- Add a modal for conact me -->
 <!-- Make jumbtron look better -->
@@ -23,13 +21,8 @@
 
 <body>
     <!-- Jumbotron -->
-    <div class="jumbotron text-white bg-dark">
-        <!-- <div class="card text-white bg-dark"> -->
-            <!-- <img src="./assets/img/backgrounds/borealis-cabin.jpg" class="card-img" alt="Borealis"> -->
-            <!-- <div class="card-img-overlay"> -->
-            <h1> Mao Lin</h1>
-            <!-- </div> -->
-        <!-- </div> -->
+    <div id="myJumboTron" class="jumbotron text-white">
+        <h1> Mao Lin</h1>
     </div>
 
     <!-- Navigation Bar -->
@@ -43,12 +36,12 @@
         <!-- Main Row for Bio and Portfolio Cards -->
         <div class="row">
  
-            <!-- Portfolio Card Column -->
+            <!--Main Column -->
             <div class="col-12">
                 <div class="card-columns">
 
                     <!-- Main Bio -->
-                    <div class="card border-secondary bg-secondary rounded text-white p-2" id="mainBio">
+                    <div class="card border-secondary bg-secondary text-white p-2" id="mainBio">
                         <h3>About Me</h1>
                         <!-- Bio Image -->
                         <img class="rounded" src="./assets/img/bioimage/panda.jpg" alt="Bio Image" id="mainBioImg">
@@ -60,90 +53,174 @@
 
                     <!-- Card 1 -->
                     <div class="card text-white font-weight-bold">
-                        <img src="./assets/img/backgrounds/mountains.jpg" class="card-img img-responsive" alt="Card Photo">
-                        <div class="card-img-overlay">
-                            <h5>Project</h5>
-                            <p>Description</p>
-                            <div class=>
-                            <button type="button" data-toggle="collapse" data-target="#cardOneInfo" class="myBtnStyle">More Info</button>
+                        <!-- Card Main Display -->
+                        <div class="cardMain">
+                            <img src="./assets/img/backgrounds/mountains.jpg" class="card-img img-responsive" alt="Card Photo">
+                            <div class="card-img-overlay">
+                                <h5>Project</h5>
+                                <div style="height: 100px; overflow: hidden;">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, repellendus! Officia voluptatibus beatae quam architecto rem ipsum accusantium dolor?</p>
+                                </div>
+                                <div>
+                                    <button type="button" data-toggle="collapse" data-target="#cardOneInfo" class="btn btn-outline-dark myBtnStyle">More Info</button>
+                                </div>
                             </div>
                         </div>
                         <!-- Card Expanded Information -->
-                        <div id="cardOneInfo" class="collapse cardExpanded">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non rem fugit dolor quas, reiciendis beatae iure minus provident nesciunt vero ratione delectus iusto harum quae culpa eum perspiciatis voluptatem expedita!</div>
+                        <div id="cardOneInfo" class="collapse cardExpanded">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit sapiente a eligendi sit expedita sint excepturi suscipit incidunt, culpa, autem aut vero ratione! Maxime consequuntur numquam quia accusantium in accusamus.</p>
+                        </div>
                     </div>
 
                     <!-- Card 2 -->
                     <div class="card text-white font-weight-bold">
-                        <img src="./assets/img/backgrounds/arctic.jpg" class="card-img img-responsive" alt="Card Photo"> 
-                        <div class="card-img-overlay">
-                            <h5>Project</h5>
-                            <p>Description</p>
-                            <button type="button" data-toggle="collapse" data-target="#cardTwoInfo" class="myBtnStyle">More Info</button>
+                        <!-- Card Main Display -->
+                        <div class="cardMain">
+                            <img src="./assets/img/backgrounds/arctic.jpg" class="card-img img-responsive" alt="Card Photo"> 
+                            <div class="card-img-overlay">
+                                <h5>Project</h5>
+                                <div style="height: 100px; overflow: hidden;">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, repellendus! Officia voluptatibus beatae quam architecto rem ipsum accusantium dolor?</p>
+                                </div>
+                                <button type="button" data-toggle="collapse" data-target="#cardTwoInfo" class="btn btn-outline-dark myBtnStyle">More Info</button>
+                            </div>
                         </div>
                         <!-- Card Expanded Information -->
-                        <div id="cardTwoInfo" class="collapse cardExpanded">Insert Information here</div>
+                        <div id="cardTwoInfo" class="collapse cardExpanded">
+                            <p>Insert Information here</p>
+                        </div>
                     </div>
 
                     <!-- Card 3 -->
                     <div class="card text-white font-weight-bold">
-                        <img src="./assets/img/backgrounds/beach.jpg" class="card-img img-responsive" alt="Card Photo" >
-                        <div class="card-img-overlay">
-                            <h5>Project</h5>
-                            <p>Description</p>
+                        <!-- Card Main Display -->
+                        <div class="cardMain">
+                            <img src="./assets/img/backgrounds/beach.jpg" class="card-img img-responsive" alt="Card Photo"> 
+                            <div class="card-img-overlay">
+                                <h5>Project</h5>
+                                <div style="height: 100px; overflow: hidden;">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, repellendus! Officia voluptatibus beatae quam architecto rem ipsum accusantium dolor?</p>
+                                </div>
+                                <button type="button" data-toggle="collapse" data-target="#cardThreeInfo" class="btn btn-outline-dark myBtnStyle">More Info</button>
+                            </div>
+                        </div>
+                        <!-- Card Expanded Information -->
+                        <div id="cardThreeInfo" class="collapse cardExpanded">
+                            <p>Insert Information here</p>
                         </div>
                     </div>
 
                     <!-- Card 4 -->
                     <div class="card text-white font-weight-bold">
-                        <img src="./assets/img/backgrounds/cleveland.jpg" class="card-img img-responsive" alt="Card Photo" >
-                        <div class="card-img-overlay">
-                            <h5>Project</h5>
-                            <p>Description</p>
+                        <!-- Card Main Display -->
+                        <div class="cardMain">
+                            <img src="./assets/img/backgrounds/cleveland.jpg" class="card-img img-responsive" alt="Card Photo"> 
+                            <div class="card-img-overlay">
+                                <h5>Project</h5>
+                                <div style="height: 100px; overflow: hidden;">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, repellendus! Officia voluptatibus beatae quam architecto rem ipsum accusantium dolor?</p>
+                                </div>
+                                <button type="button" data-toggle="collapse" data-target="#cardFourInfo" class="btn btn-outline-dark myBtnStyle">More Info</button>
+                            </div>
+                        </div>
+                        <!-- Card Expanded Information -->
+                        <div id="cardFourInfo" class="collapse cardExpanded">
+                            <p>Insert Information here</p>
                         </div>
                     </div>
 
                     <!-- Card 5 -->
                     <div class="card text-white font-weight-bold">
-                        <img src="./assets/img/backgrounds/forest.jpg" class="card-img img-responsive" alt="Card Photo" >
-                        <div class="card-img-overlay">
-                            <h5>Project</h5>
-                            <p>Description</p>
+                        <!-- Card Main Display -->
+                        <div class="cardMain">
+                            <img src="./assets/img/backgrounds/forest.jpg" class="card-img img-responsive" alt="Card Photo"> 
+                            <div class="card-img-overlay">
+                                <h5>Project</h5>
+                                <div style="height: 100px; overflow: hidden;">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, repellendus! Officia voluptatibus beatae quam architecto rem ipsum accusantium dolor?</p>
+                                </div>
+                                <button type="button" data-toggle="collapse" data-target="#cardFiveInfo" class="btn btn-outline-dark myBtnStyle">More Info</button>
+                            </div>
+                        </div>
+                        <!-- Card Expanded Information -->
+                        <div id="cardFiveInfo" class="collapse cardExpanded">
+                            <p>Insert Information here</p>
                         </div>
                     </div>
 
                     <!-- Card 6 -->
                     <div class="card text-white font-weight-bold">
-                        <img src="./assets/img/backgrounds/lightbulb.jpg" class="card-img img-responsive" alt="Card Photo">
-                        <div class="card-img-overlay">
-                            <h5>Project</h5>
-                            <p>Description</p>
+                        <!-- Card Main Display -->
+                        <div class="cardMain">
+                            <img src="./assets/img/backgrounds/lightbulb.jpg" class="card-img img-responsive" alt="Card Photo"> 
+                            <div class="card-img-overlay">
+                                <h5>Project</h5>
+                                <div style="height: 100px; overflow: hidden;">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, repellendus! Officia voluptatibus beatae quam architecto rem ipsum accusantium dolor?</p>
+                                </div>
+                                <button type="button" data-toggle="collapse" data-target="#cardSixInfo" class="btn btn-outline-dark myBtnStyle">More Info</button>
+                            </div>
+                        </div>
+                        <!-- Card Expanded Information -->
+                        <div id="cardSixInfo" class="collapse cardExpanded">
+                            <p>Insert Information here</p>
                         </div>
                     </div>
 
                     <!-- Card 7 -->
                     <div class="card text-white font-weight-bold">
-                        <img src="./assets/img/backgrounds/hackerbridge.jpg" class="card-img img-responsive" alt="Card Photo">
-                        <div class="card-img-overlay">
-                            <h5>Project</h5>
-                            <p>Description</p>
+                        <!-- Card Main Display -->
+                        <div class="cardMain">
+                            <img src="./assets/img/backgrounds/hackerbridge.jpg" class="card-img img-responsive" alt="Card Photo"> 
+                            <div class="card-img-overlay">
+                                <h5>Project</h5>
+                                <div style="height: 100px; overflow: hidden;">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, repellendus! Officia voluptatibus beatae quam architecto rem ipsum accusantium dolor?</p>
+                                </div>
+                                <button type="button" data-toggle="collapse" data-target="#cardSevenInfo" class="btn btn-outline-dark myBtnStyle">More Info</button>
+                            </div>
+                        </div>
+                        <!-- Card Expanded Information -->
+                        <div id="cardSevenInfo" class="collapse cardExpanded">
+                            <p>Insert Information here</p>
                         </div>
                     </div>
 
                     <!-- Card 8 -->
                     <div class="card text-white font-weight-bold">
-                        <img src="./assets/img/backgrounds/borealis.jpg" class="card-img img-responsive" alt="Card Photo">
-                        <div class="card-img-overlay">
-                            <h5>Project</h5>
-                            <p>Description</p>
+                        <!-- Card Main Display -->
+                        <div class="cardMain">
+                            <img src="./assets/img/backgrounds/borealis.jpg" class="card-img img-responsive" alt="Card Photo"> 
+                            <div class="card-img-overlay">
+                                <h5>Project</h5>
+                                <div style="height: 100px; overflow: hidden;">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, repellendus! Officia voluptatibus beatae quam architecto rem ipsum accusantium dolor?</p>
+                                </div>
+                                <button type="button" data-toggle="collapse" data-target="#cardEightInfo" class="btn btn-outline-dark myBtnStyle">More Info</button>
+                            </div>
+                        </div>
+                        <!-- Card Expanded Information -->
+                        <div id="cardEightInfo" class="collapse cardExpanded">
+                            <p>Insert Information here</p>
                         </div>
                     </div>
 
                     <!-- Card 9 -->
                     <div class="card text-white font-weight-bold">
-                        <img src="./assets/img/backgrounds/desert.jpg" class="card-img img-responsive" alt="Card Photo">
-                        <div class="card-img-overlay">
-                            <h5>Project</h5>
-                            <p>Description</p>
+                        <!-- Card Main Display -->
+                        <div class="cardMain">
+                            <img src="./assets/img/backgrounds/desert.jpg" class="card-img img-responsive" alt="Card Photo"> 
+                            <div class="card-img-overlay">
+                                <h5>Project</h5>
+                                <div style="height: 100px; overflow: hidden;">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, repellendus! Officia voluptatibus beatae quam architecto rem ipsum accusantium dolor?</p>
+                                </div>
+                                <button type="button" data-toggle="collapse" data-target="#cardNineInfo" class="btn btn-outline-dark myBtnStyle">More Info</button>
+                            </div>
+                        </div>
+                        <!-- Card Expanded Information -->
+                        <div id="cardNineInfo" class="collapse cardExpanded">
+                            <p>Insert Information here</p>
                         </div>
                     </div>
 
