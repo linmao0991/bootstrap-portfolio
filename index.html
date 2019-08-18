@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <title> Mao Lin - About Me</title>
     <link rel="shortcut icon" type="image/x-icon:" href="assets/img/icons/m-icon.png">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -26,125 +29,116 @@
     </div>
 
     <!-- Container -->
-    <div class="container-fluid">
+    <div class="container">
 
         <!-- Main Row for Bio and Portfolio Cards -->
         <div class="row">
-            <!-- Main Bio Column -->
-            <div class="col-3 border-secondary bg-secondary rounded text-white p-2">
-                <!-- Bio Image -->
-                <img class="rounded" src="./assets/img/bioimage/panda.jpg" alt="Bio Image" style="width: 100%;">
-                <!-- Bio Text -->
-                <div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, maxime fugiat, consectetur voluptatibus voluptates iste, neque accusantium fugit obcaecati possimus temporibus veritatis magni voluptatum esse? Dolores dolorem ab commodi dolor quaerat sit laudantium ipsam explicabo enim amet? Quas praesentium excepturi blanditiis hic officiis. Cum cupiditate aperiam, laborum doloribus assumenda ducimus.</p>
-                </div>
-            </div>
-
+ 
             <!-- Portfolio Card Column -->
-            <div class="col-9">
-                
-                <!-- First Row -->
-                <div class="row">
-                    <!-- Column 1 row 1 -->
-                    <div class="col-3">
-                        <div class="card text-white" style="width: 18rem; height: 10rem;">
-                            <img src="./assets/img/backgrounds/mountains.jpg" class="card-img img-responsive" alt="Card Photo" style="width: 100%; height: 100%;">
-                            <div class="card-img-overlay">
-                                <h5>Project</h5>
-                                <p>Description</p>
-                            </div>
-                        </div>
-                    </div>
-                     <!-- Column 2 row 1 -->
-                    <div class="col-3">
-                        <div class="card text-white" style="width: 18rem; height: 10rem;">
-                            <img src="./assets/img/backgrounds/arctic.jpg" class="card-img img-responsive" alt="Card Photo" style="width: 100%; height: 100%;"> 
-                            <div class="card-img-overlay">
-                                <h5>Project</h5>
-                                <p>Description</p>
-                            </div>
-                        </div>
-                    </div>
-                     <!-- Column 3 row 1 -->
-                    <div class="col-3">
-                        <div class="card text-white" style="width: 18rem; height: 10rem;">
-                            <img src="./assets/img/backgrounds/beach.jpg" class="card-img img-responsive" alt="Card Photo" style="width: 100%; height: 100%;">
-                            <div class="card-img-overlay">
-                                <h5>Project</h5>
-                                <p>Description</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-12">
+                <div class="card-columns">
 
-                <!-- Second Row -->
-                <div class="row">
-                    <!-- Column 1 row 2 -->
-                    <div class="col-3">
-                        <div class="card text-white" style="width: 18rem; height: 10rem;">
-                            <img src="./assets/img/backgrounds/forest.jpg" class="card-img img-responsive" alt="Card Photo" style="width: 100%; height: 100%;">
-                            <div class="card-img-overlay">
-                                <h5>Project</h5>
-                                <p>Description</p>
-                            </div>
+                    <!-- Main Bio -->
+                    <div class="card border-secondary bg-secondary rounded text-white p-2" id="mainBio">
+                        <h3>About Me</h1>
+                        <!-- Bio Image -->
+                        <img class="rounded" src="./assets/img/bioimage/panda.jpg" alt="Bio Image" id="mainBioImg">
+                        <!-- Bio Text -->
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, maxime fugiat, consectetur voluptatibus voluptates iste, neque accusantium fugit obcaecati possimus temporibus veritatis magni voluptatum esse? Dolores dolorem ab commodi dolor quaerat sit laudantium ipsam explicabo enim amet? Quas praesentium excepturi blanditiis hic officiis. Cum cupiditate aperiam, laborum doloribus assumenda ducimus.</p>
                         </div>
                     </div>
-                    <!-- Column 2 row 2 -->
-                    <div class="col-3">
-                        <div class="card text-white" style="width: 18rem; height: 10rem;">
-                            <img src="./assets/img/backgrounds/hackerbridge.jpg" class="card-img img-responsive" alt="Card Photo" style="width: 100%; height: 100%;">
-                            <div class="card-img-overlay">
-                                <h5>Project</h5>
-                                <p>Description</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Column 3 row 2 -->
-                    <div class="col-3">
-                        <div class="card text-white" style="width: 18rem; height: 10rem;">
-                            <img src="./assets/img/backgrounds/lightbulb.jpg" class="card-img img-responsive" alt="Card Photo" style="width: 100%; height: 100%;">
-                            <div class="card-img-overlay">
-                                <h5>Project</h5>
-                                <p>Description</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Third Row -->
-                <div class="row">
-                    <!-- Column 1 row 3 -->
-                    <div class="col-3">
-                        <div class="card text-white" style="width: 18rem; height: 10rem;">
-                            <img src="./assets/img/backgrounds/cleveland.jpg" class="card-img img-responsive" alt="Card Photo" style="width: 100%; height: 100%;">
-                            <div class="card-img-overlay">
-                                <h5>Project</h5>
-                                <p>Description</p>
+                    <!-- Card 1 -->
+                    <div class="card text-white font-weight-bold">
+                        <img src="./assets/img/backgrounds/mountains.jpg" class="card-img img-responsive" alt="Card Photo">
+                        <div class="card-img-overlay">
+                            <h5>Project</h5>
+                            <p>Description</p>
+                            <div class=>
+                            <button type="button" data-toggle="collapse" data-target="#cardOneInfo" class="myBtnStyle">More Info</button>
                             </div>
                         </div>
+                        <!-- Card Expanded Information -->
+                        <div id="cardOneInfo" class="collapse cardExpanded">Insert Information here</div>
                     </div>
-                    <!-- Column 2 row 3 -->
-                    <div class="col-3">
-                        <div class="card text-white" style="width: 18rem; height: 10rem;">
-                            <img src="./assets/img/backgrounds/borealis.jpg" class="card-img img-responsive" alt="Card Photo" style="width: 100%; height: 100%;">
-                            <div class="card-img-overlay">
-                                <h5>Project</h5>
-                                <p>Description</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Column 3 row 3 -->
-                    <div class="col-3">
-                        <div class="card text-white" style="width: 18rem; height: 10rem;">
-                            <img src="./assets/img/backgrounds/desert.jpg" class="card-img img-responsive" alt="Card Photo" style="width: 100%; height: 100%;">
-                            <div class="card-img-overlay">
-                                <h5>Project</h5>
-                                <p>Description</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
+                    <!-- Card 2 -->
+                    <div class="card text-white font-weight-bold">
+                        <img src="./assets/img/backgrounds/arctic.jpg" class="card-img img-responsive" alt="Card Photo"> 
+                        <div class="card-img-overlay">
+                            <h5>Project</h5>
+                            <p>Description</p>
+                            <button type="button" data-toggle="collapse" data-target="#cardTwoInfo" class="myBtnStyle">More Info</button>
+                        </div>
+                        <!-- Card Expanded Information -->
+                        <div id="cardTwoInfo" class="collapse cardExpanded">Insert Information here</div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="card text-white font-weight-bold">
+                        <img src="./assets/img/backgrounds/beach.jpg" class="card-img img-responsive" alt="Card Photo" >
+                        <div class="card-img-overlay">
+                            <h5>Project</h5>
+                            <p>Description</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="card text-white font-weight-bold">
+                        <img src="./assets/img/backgrounds/cleveland.jpg" class="card-img img-responsive" alt="Card Photo" >
+                        <div class="card-img-overlay">
+                            <h5>Project</h5>
+                            <p>Description</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="card text-white font-weight-bold">
+                        <img src="./assets/img/backgrounds/forest.jpg" class="card-img img-responsive" alt="Card Photo" >
+                        <div class="card-img-overlay">
+                            <h5>Project</h5>
+                            <p>Description</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="card text-white font-weight-bold">
+                        <img src="./assets/img/backgrounds/lightbulb.jpg" class="card-img img-responsive" alt="Card Photo">
+                        <div class="card-img-overlay">
+                            <h5>Project</h5>
+                            <p>Description</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 7 -->
+                    <div class="card text-white font-weight-bold">
+                        <img src="./assets/img/backgrounds/hackerbridge.jpg" class="card-img img-responsive" alt="Card Photo">
+                        <div class="card-img-overlay">
+                            <h5>Project</h5>
+                            <p>Description</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 8 -->
+                    <div class="card text-white font-weight-bold">
+                        <img src="./assets/img/backgrounds/borealis.jpg" class="card-img img-responsive" alt="Card Photo">
+                        <div class="card-img-overlay">
+                            <h5>Project</h5>
+                            <p>Description</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 9 -->
+                    <div class="card text-white font-weight-bold">
+                        <img src="./assets/img/backgrounds/desert.jpg" class="card-img img-responsive" alt="Card Photo">
+                        <div class="card-img-overlay">
+                            <h5>Project</h5>
+                            <p>Description</p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
 
         </div><!-- Main Row -->
