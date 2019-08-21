@@ -5,21 +5,17 @@
 
 .card-img {
     opacity: 0.75;
-    height: 100%;
-    width: 100%;
+    /* height: 100%; */
+    /* min-height: 200px; */
+    /* max-height: 300px; */
+    /* width: 100%; */
 }
 
-.cardMain{
-    /* min-height: 200px;
+/* .cardMain{
+    min-height: 200px;
     max-height: 300px;
-    height: 200px; */
-}
-
-.card{
-    /* min-height: 200px;
-    max-height: 300px;
-    height: 200px; */
-}
+    height: 200px;
+} */
 
 .myBtnStyle{
     border-style: none;
@@ -47,15 +43,15 @@
     }
 }
 
-/* @media (min-width: 100px) {
+@media (min-width: 800px) {
     .card-columns {
         -webkit-column-count: 2;
         -moz-column-count: 2;
         column-count: 2;
     }
-} */
+}
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
     .card-columns {
         -webkit-column-count: 3;
         -moz-column-count: 3;
@@ -63,15 +59,7 @@
     }
 }
 
-@media (min-width: 1600px) {
-    .card-columns {
-        -webkit-column-count: 4;
-        -moz-column-count: 4;
-        column-count: 4;
-    }
-}
-
-@media (min-width: 1800px) {
+@media (min-width: 1500px) {
     .card-columns {
         -webkit-column-count: 4;
         -moz-column-count: 4;
