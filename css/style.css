@@ -10,14 +10,17 @@
 }
 
 .cardMain{
-    min-height: 200px;
-    height: 200px;
+    /* min-height: 200px;
+    max-height: 300px;
+    height: 200px; */
 }
 
 .card{
-    min-height: 200px;
-    height: 200px;
+    /* min-height: 200px;
+    max-height: 300px;
+    height: 200px; */
 }
+
 .myBtnStyle{
     border-style: none;
     color: white;
@@ -34,6 +37,62 @@
     color: rgb(90, 90, 90);
     text-shadow: 0 0 0 white;
     padding: 5px 5px 5px 5px;
+}
+
+@media (min-width: 600px) {
+    .card-columns {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+}
+
+/* @media (min-width: 100px) {
+    .card-columns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+} */
+
+@media (min-width: 1024px) {
+    .card-columns {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media (min-width: 1600px) {
+    .card-columns {
+        -webkit-column-count: 4;
+        -moz-column-count: 4;
+        column-count: 4;
+    }
+}
+
+@media (min-width: 1800px) {
+    .card-columns {
+        -webkit-column-count: 4;
+        -moz-column-count: 4;
+        column-count: 4;
+    }
+}
+
+@media (min-width: 2500px) {
+    .card-columns {
+        -webkit-column-count: 5;
+        -moz-column-count: 5;
+        column-count: 5;
+    }
+}
+
+@media (min-width: 3500px) {
+    .card-columns {
+        -webkit-column-count: 6;
+        -moz-column-count: 6;
+        column-count: 6;
+    }
 }
 
 #myJumboTron{
