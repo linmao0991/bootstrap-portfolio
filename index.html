@@ -85,7 +85,7 @@
     <div class="container-fluid">
 
             <!--Main Column -->
-            <div class="card-columns">
+            <div class="card-columns display: inline-block">
 
                 <!-- Main Bio -->
                 <div class="card border-secondary bg-secondary text-white p-2" id="mainBio">
@@ -101,183 +101,169 @@
                 </div>
 
                 <!-- Card 1 -->
-                <div class="card text-white font-weight-bold">
-                    <!-- Card Main Display -->
-                    <div class="cardMain">
-                        <img src="./assets/img/backgrounds/mountains.jpg" class="card-img img-responsive " alt="Card Photo">
-                        <div class="card-img-overlay">
-                            <h5>Scratch game - Unicorn Assassin</h5>
-                            <div style="height: 100px; overflow: hidden;">
-                                <p>Game made for coding bootcamp prework.</p>
-                            </div>
-                            <div class="row">
-                                <button type="button" data-toggle="collapse" data-target="#cardOneInfo" class="btn btn-outline-dark myBtnStyle">More Info</button>
-                                <form action="https://scratch.mit.edu/projects/321201292/" method="get" target="blank">
-                                    <button type="submit" class="btn btn-outline-dark myBtnStyle">Link</button>
-                                </form>
-                            </div>
+                <div class="card text-white font-weight-bold h-25 d-inline-block">
+                    <!-- Card Body-->
+                    <div class="card-body p-0">
+                        <img src="./assets/img/backgrounds/mountains.jpg" class="card-img" alt="Card Photo">
+                        <div class="card-img-overlay card-block">
+                            <h5 class="card-title">Scratch game - Unicorn Assassin</h5>
+                            <p class="card-text">Game made for coding bootcamp prework.</p>
+                            <a type="button" data-toggle="collapse" data-target="#cardOneInfo" class="btn btn-outline-dark font-weight-bold myBtnStyle">More Info</a>
+                            <a type="button" class="btn btn-outline-dark font-weight-bold myBtnStyle" href="https://scratch.mit.edu/projects/321201292/" target="_blank">Link</a>
                         </div>
-                    </div>
-                    <!-- Card Expanded Information -->
-                    <div id="cardOneInfo" class="collapse cardExpanded">
-                        <h5>Unicorn Assassin</h5>
-                        <p>The coding bootcamp prework required me to create a game made on the MIT Scratch website based on a set of game rules. The example game shown had a player controled cat that had to catch balls droping from the top of the game screen. The player could move the cat side to side to collide the cat with the ball. If the ball was not caught then the game was over.</p>
-                        <br>
-                        <p>My verison of the game was called Unicorn Assasin. The player controlled a unicorn that was able to move up or down the screen and shoot rainbow beams. Instead of colliding with balls as the object of the game, mine was to hit flying gryphons with beams. The grpyhons would appear at random positions of the screen oppsite of the unicorn and fly across. The player would score a point hitting the gryphon or lose a life from either being hit or letting the gryphon reach the end of the screen. The speed at witch the gryphon flies would speed up based on the score and at an certain score a boss gryphon would appear. The boss gryphon had the following functions: set amount of hp, track player, follow player on y-axis, fire lighting bolts when at the same y-axis, flying animations. The game is infinite and only ends if the player losses all their life or exits the game. </p>
-                        <br>
+                        <!-- Card Expanded Information -->
+                        <div id="cardOneInfo" class="collapse cardExpanded">
+                            <h5>Unicorn Assassin</h5>
+                            <p>The coding bootcamp prework required me to create a game made on the MIT Scratch website based on a set of game rules. The example game shown had a player controled cat that had to catch balls droping from the top of the game screen. The player could move the cat side to side to collide the cat with the ball. If the ball was not caught then the game was over.</p>
+                            <br>
+                            <p>My verison of the game was called Unicorn Assasin. The player controlled a unicorn that was able to move up or down the screen and shoot rainbow beams. Instead of colliding with balls as the object of the game, mine was to hit flying gryphons with beams. The grpyhons would appear at random positions of the screen oppsite of the unicorn and fly across. The player would score a point hitting the gryphon or lose a life from either being hit or letting the gryphon reach the end of the screen. The speed at witch the gryphon flies would speed up based on the score and at an certain score a boss gryphon would appear. The boss gryphon had the following functions: set amount of hp, track player, follow player on y-axis, fire lighting bolts when at the same y-axis, flying animations. The game is infinite and only ends if the player losses all their life or exits the game. </p>
+                            <br>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Card 2 -->
                 <div class="card text-white font-weight-bold">
-                    <!-- Card Main Display -->
-                    <div class="cardMain">
+                    <!-- Card Body -->
+                    <div class="card-body p-0">
                         <img src="./assets/img/backgrounds/arctic.jpg" class="card-img img-responsive" alt="Card Photo"> 
                         <div class="card-img-overlay">
                             <h5>Project</h5>
-                            <div style="height: 100px; overflow: hidden;">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, repellendus!</p>
-                            </div>
-                            <button type="button" data-toggle="collapse" data-target="#cardTwoInfo" class="btn btn-outline-dark myBtnStyle">More Info</button>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, repellendus!</p>
+                            <a type="button" data-toggle="collapse" data-target="#cardTwoInfo" class="btn btn-outline-dark font-weight-bold myBtnStyle">More Info</a>
+                            <a type="button" class="btn btn-outline-dark font-weight-bold myBtnStyle" href="#" target="_blank">Link</a>
                         </div>
-                    </div>
-                    <!-- Card Expanded Information -->
-                    <div id="cardTwoInfo" class="collapse cardExpanded">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ipsam libero similique.</p>
-                    </div>
+                        <!-- Card Expanded Information -->
+                        <div id="cardTwoInfo" class="collapse cardExpanded">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ipsam libero similique.</p>
+                        </div>
+                    </div>  
                 </div>
 
                 <!-- Card 3 -->
                 <div class="card text-white font-weight-bold">
-                    <!-- Card Main Display -->
-                    <div class="cardMain">
+                    <!-- Card Body -->
+                    <div class="card-body p-0">
                         <img src="./assets/img/backgrounds/beach.jpg" class="card-img img-responsive" alt="Card Photo"> 
                         <div class="card-img-overlay">
                             <h5>Project</h5>
-                            <div style="height: 100px; overflow: hidden;">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, repellendus!</p>
-                            </div>
-                            <button type="button" data-toggle="collapse" data-target="#cardThreeInfo" class="btn btn-outline-dark myBtnStyle">More Info</button>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, repellendus!</p>
+                            <a type="button" data-toggle="collapse" data-target="#cardThreeInfo" class="btn btn-outline-dark font-weight-bold myBtnStyle">More Info</a>
+                            <a type="button" class="btn btn-outline-dark font-weight-bold myBtnStyle" href="#" target="_blank">Link</a>
                         </div>
-                    </div>
-                    <!-- Card Expanded Information -->
-                    <div id="cardThreeInfo" class="collapse cardExpanded">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, aspernatur. Aperiam iste illo nihil sapiente reprehenderit corrupti fugiat, adipisci debitis nobis laboriosam?</p>
-                    </div>
+                        <!-- Card Expanded Information -->
+                        <div id="cardThreeInfo" class="collapse cardExpanded">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ipsam libero similique.</p>
+                        </div>
+                    </div>  
                 </div>
 
                 <!-- Card 4 -->
                 <div class="card text-white font-weight-bold">
-                    <!-- Card Main Display -->
-                    <div class="cardMain">
+                    <!-- Card Body -->
+                    <div class="card-body p-0">
                         <img src="./assets/img/backgrounds/cleveland.jpg" class="card-img img-responsive" alt="Card Photo"> 
                         <div class="card-img-overlay">
                             <h5>Project</h5>
-                            <div style="height: 100px; overflow: hidden;">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, repellendus!</p>
-                            </div>
-                            <button type="button" data-toggle="collapse" data-target="#cardFourInfo" class="btn btn-outline-dark myBtnStyle">More Info</button>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, repellendus!</p>
+                            <a type="button" data-toggle="collapse" data-target="#cardFourInfo" class="btn btn-outline-dark font-weight-bold myBtnStyle">More Info</a>
+                            <a type="button" class="btn btn-outline-dark font-weight-bold myBtnStyle" href="#" target="_blank">Link</a>
                         </div>
-                    </div>
-                    <!-- Card Expanded Information -->
-                    <div id="cardFourInfo" class="collapse cardExpanded">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro incidunt veniam, corrupti dolores veritatis laboriosam!</p>
-                    </div>
+                        <!-- Card Expanded Information -->
+                        <div id="cardFourInfo" class="collapse cardExpanded">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ipsam libero similique.</p>
+                        </div>
+                    </div>  
                 </div>
 
                 <!-- Card 5 -->
                 <div class="card text-white font-weight-bold">
-                    <!-- Card Main Display -->
-                    <div class="cardMain">
+                    <!-- Card Body -->
+                    <div class="card-body p-0">
                         <img src="./assets/img/backgrounds/forest.jpg" class="card-img img-responsive" alt="Card Photo"> 
                         <div class="card-img-overlay">
                             <h5>Project</h5>
-                            <div style="height: 100px; overflow: hidden;">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, repellendus!</p>
-                            </div>
-                            <button type="button" data-toggle="collapse" data-target="#cardFiveInfo" class="btn btn-outline-dark myBtnStyle">More Info</button>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, repellendus!</p>
+                            <a type="button" data-toggle="collapse" data-target="#cardFiveInfo" class="btn btn-outline-dark font-weight-bold myBtnStyle">More Info</a>
+                            <a type="button" class="btn btn-outline-dark font-weight-bold myBtnStyle" href="#" target="_blank">Link</a>
                         </div>
-                    </div>
-                    <!-- Card Expanded Information -->
-                    <div id="cardFiveInfo" class="collapse cardExpanded">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis magnam officia laboriosam placeat? Sunt obcaecati non neque laboriosam.</p>
-                    </div>
+                        <!-- Card Expanded Information -->
+                        <div id="cardFiveInfo" class="collapse cardExpanded">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ipsam libero similique.</p>
+                        </div>
+                    </div>  
                 </div>
 
                 <!-- Card 6 -->
                 <div class="card text-white font-weight-bold">
-                    <!-- Card Main Display -->
-                    <div class="cardMain">
+                    <!-- Card Body -->
+                    <div class="card-body p-0">
                         <img src="./assets/img/backgrounds/lightbulb.jpg" class="card-img img-responsive" alt="Card Photo"> 
                         <div class="card-img-overlay">
                             <h5>Project</h5>
-                            <div style="height: 100px; overflow: hidden;">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, repellendus!</p>
-                            </div>
-                            <button type="button" data-toggle="collapse" data-target="#cardSixInfo" class="btn btn-outline-dark myBtnStyle">More Info</button>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, repellendus!</p>
+                            <a type="button" data-toggle="collapse" data-target="#cardSixInfo" class="btn btn-outline-dark font-weight-bold myBtnStyle">More Info</a>
+                            <a type="button" class="btn btn-outline-dark myBtnStyle" href="#" target="_blank">Link</a>
                         </div>
-                    </div>
-                    <!-- Card Expanded Information -->
-                    <div id="cardSixInfo" class="collapse cardExpanded">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis magnam suscipit quisquam. Eum iste sit cumque expedita quam est fugit maxime?</p>
-                    </div>
+                        <!-- Card Expanded Information -->
+                        <div id="cardSixInfo" class="collapse cardExpanded">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ipsam libero similique.</p>
+                        </div>
+                    </div>  
                 </div>
 
                 <!-- Card 7 -->
                 <div class="card text-white font-weight-bold">
-                    <!-- Card Main Display -->
-                    <div class="cardMain">
+                    <!-- Card Body -->
+                    <div class="card-body p-0">
                         <img src="./assets/img/backgrounds/hackerbridge.jpg" class="card-img img-responsive" alt="Card Photo"> 
                         <div class="card-img-overlay">
                             <h5>Project</h5>
-                            <div style="height: 100px; overflow: hidden;">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, repellendus!</p>
-                            </div>
-                            <button type="button" data-toggle="collapse" data-target="#cardSevenInfo" class="btn btn-outline-dark myBtnStyle">More Info</button>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, repellendus!</p>
+                            <a type="button" data-toggle="collapse" data-target="#cardSevenInfo" class="btn btn-outline-dark font-weight-bold myBtnStyle">More Info</a>
+                            <a type="button" class="btn btn-outline-dark font-weight-bold myBtnStyle" href="#" target="_blank">Link</a>
                         </div>
-                    </div>
-                    <!-- Card Expanded Information -->
-                    <div id="cardSevenInfo" class="collapse cardExpanded">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nobis voluptatem suscipit eaque incidunt et architecto? Quasi impedit consequatur vitae!</p>
-                    </div>
+                        <!-- Card Expanded Information -->
+                        <div id="cardSevenInfo" class="collapse cardExpanded">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ipsam libero similique.</p>
+                        </div>
+                    </div>  
                 </div>
 
                 <!-- Card 8 -->
                 <div class="card text-white font-weight-bold">
-                    <!-- Card Main Display -->
-                    <div class="cardMain">
+                    <!-- Card Body -->
+                    <div class="card-body p-0">
                         <img src="./assets/img/backgrounds/borealis.jpg" class="card-img img-responsive" alt="Card Photo"> 
                         <div class="card-img-overlay">
                             <h5>Project</h5>
-                            <div style="height: 100px; overflow: hidden;">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, repellendus!</p>
-                            </div>
-                            <button type="button" data-toggle="collapse" data-target="#cardEightInfo" class="btn btn-outline-dark myBtnStyle">More Info</button>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, repellendus!</p>
+                            <a type="button" data-toggle="collapse" data-target="#cardEightInfo" class="btn btn-outline-dark font-weight-bold myBtnStyle">More Info</a>
+                            <a type="button" class="btn btn-outline-dark font-weight-bold myBtnStyle" href="#" target="_blank">Link</a>
                         </div>
-                    </div>
-                    <!-- Card Expanded Information -->
-                    <div id="cardEightInfo" class="collapse cardExpanded">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, beatae?</p>
-                    </div>
+                        <!-- Card Expanded Information -->
+                        <div id="cardEightInfo" class="collapse cardExpanded">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ipsam libero similique.</p>
+                        </div>
+                    </div>  
                 </div>
 
                 <!-- Card 9 -->
                 <div class="card text-white font-weight-bold">
-                    <!-- Card Main Display -->
-                    <div class="cardMain">
+                    <!-- Card Body -->
+                    <div class="card-body p-0">
                         <img src="./assets/img/backgrounds/desert.jpg" class="card-img img-responsive" alt="Card Photo"> 
                         <div class="card-img-overlay">
                             <h5>Project</h5>
-                            <div style="height: 100px; overflow: hidden;">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, repellendus!</p>
-                            </div>
-                            <button type="button" data-toggle="collapse" data-target="#cardNineInfo" class="btn btn-outline-dark myBtnStyle">More Info</button>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, repellendus!</p>
+                            <a type="button" data-toggle="collapse" data-target="#cardNineInfo" class="btn btn-outline-dark font-weight-bold myBtnStyle">More Info</a>
+                            <a type="button" class="btn btn-outline-dark font-weight-bold myBtnStyle" href="#" target="_blank">Link</a>
                         </div>
-                    </div>
-                    <!-- Card Expanded Information -->
-                    <div id="cardNineInfo" class="collapse cardExpanded">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt officia quisquam nulla est illum, voluptatem expedita, maiores nobis harum sapiente veniam vero eligendi ea magni numquam fuga corrupti! Ipsum, enim.</p>
-                    </div>
+                        <!-- Card Expanded Information -->
+                        <div id="cardNineInfo" class="collapse cardExpanded">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ipsam libero similique.</p>
+                        </div>
+                    </div>  
                 </div>
 
             </div>

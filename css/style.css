@@ -4,6 +4,8 @@
 
 .card-img {
     opacity: 0.75;
+    min-width: 300px;
+    min-height: 200px;
 }
 
 .dropDownstyle{
@@ -22,7 +24,8 @@
 .myBtnStyle{
     border-style: none;
     color: white;
-    text-shadow: 1px 1px 2px rgb(14, 14, 14);
+    text-shadow: 1px 1px 3px rgb(14, 14, 14);
+    font: bolder;
 }
 
 .cardExpanded {
@@ -112,6 +115,8 @@
 #mainBio{
     height: 100%;
     width: 100%;
+    min-width: 300px;
+    min-height: 200px;
 }
 
 #mainBioImg {
